@@ -1,0 +1,58 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>Test</title>
+    <meta name="description" content="The tester">
+    <meta name="Gia Khoa Tran" content="SitePoint">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../css/styles.css">
+
+    <link rel="icon" type="image/png" href="https://cdn.finnair.com/finnair-com-ux/prod/assets/favicon/9b4e1b-favicon-32x32.png"
+        sizes="32x32">
+    <link rel="icon" type="image/png" href="https://cdn.finnair.com/finnair-com-ux/prod/assets/favicon/77a4e2-favicon-16x16.png"
+        sizes="16x16">
+
+        <style>
+            /*Loading sprite*/
+            .sprite{background-image:url(../img/spritesheet.png);background-repeat:no-repeat;display:block}
+            .curve{width:200px;height:49px;background-position:-5px -5px}
+            .plane_16px{width:16px;height:16px;background-position:-5px -64px}
+            .plane_32px{width:32px;height:32px;background-position:-31px -64px}
+            .plane_64px{width:64px;height:64px;background-position:-73px -64px}
+
+            .curve{top:0px;left:0px;}
+            .plane_32px{top:33px;left:-20px;}
+        </style>
+</head>
+
+<body>
+    <header id="header">
+        <img class="pic1" src="../img/finnapp_02.png" alt="" style="position:absolute;">
+        <img class="pic2" src="../img/finnapp_03.png" alt="" style="position:absolute;">       
+    </header>
+
+    <div id="loader">
+        <div class="sprite curve"></div>
+        <div class="sprite plane_32px"></div>
+    </div>
+
+    <div class="buttons">
+        <button id="btnNext">next</button>
+        <button id="btnPrev">previous</button>
+        <button id="btnHome" onclick="location.href = '../index.html';">Main Page</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/plugins/CSSPlugin.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.3/TimelineMax.min.js"></script>
+    <script src="../js/main.js"></script>
+</body>
+
+</html>
